@@ -2,6 +2,7 @@ package tests;
 
 import base.BaseTest;
 import org.testng.annotations.Test;
+import payloads.UserPayload;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
@@ -10,18 +11,13 @@ public class CreateUserTest extends BaseTest {
 
     @Test
     public void createUser() {
-        System.out.println("Creating a new user: morpheus");
+        System.out.println("Creating a new user using POJO payload");
 
-        String requestBody = """
-            {
-                "name": "morpheus",
-                "job": "leader"
-            }
-            """;
+        UserPayload user = new UserPayload("morpheus", "leader");
 
         given()
                 .spec(requestSpec)
-                .body(requestBody)
+                .body(user)
                 .when()
                 .post("/api/users")
                 .then()
