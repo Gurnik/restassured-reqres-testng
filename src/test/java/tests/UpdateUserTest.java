@@ -13,15 +13,16 @@ public class UpdateUserTest extends BaseTest {
 
     @Test
     public void updateUserWithPut() {
-        System.out.println("Step 1: Preparing PUT request payload");
+        System.out.println("Updating user with PUT");
 
-        UserPayload updatedUser = new UserPayload("neo", "the one");
+        String name = "neo";
+        String job = "the one";
 
-        System.out.println("Step 2: Sending PUT request to update user ID = 2");
+        UserPayload userUpdate = new UserPayload(name, job);
 
         Response response = given()
                 .spec(requestSpec)
-                .body(updatedUser)
+                .body(userUpdate)
                 .when()
                 .put("/api/users/2")
                 .then()
@@ -29,12 +30,12 @@ public class UpdateUserTest extends BaseTest {
                 .log().all()
                 .extract().response();
 
-        UpdateUserResponse updatedResponse = response.as(UpdateUserResponse.class);
+        UpdateUserResponse resData = response.as(UpdateUserResponse.class);
 
-        System.out.println("Step 3: Validating updated user data");
+        Assert.assertEquals(resData.getName(), name);
+        Assert.assertEquals(resData.getJob(), job);
+        Assert.assertNotNull(resData.getUpdatedAt());
 
-        Assert.assertEquals(updatedResponse.getName(), "neo");
-        Assert.assertEquals(updatedResponse.getJob(), "the one");
-        Assert.assertNotNull(updatedResponse.getUpdatedAt());
+        System.out.println("✅ User updated at: " + resData.getUpdatedAt());
     }
 }
