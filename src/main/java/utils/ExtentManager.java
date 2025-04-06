@@ -17,7 +17,7 @@ public class ExtentManager {
             extent = new ExtentReports();
             extent.attachReporter(sparkReporter);
             extent.setSystemInfo("Framework", "Rest Assured");
-            extent.setSystemInfo("Tester", "Your Name"); // You can personalize this
+            extent.setSystemInfo("Tester", "Daniel Kandalaft"); // You can personalize this
         }
         return extent;
     }
