@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="725b08b5-06b0-48e9-8060-c7b5ea415fcc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/payloads/CreateUserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/CreateUserWorkflowTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/payloads/UserPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/payloads/UserPayload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/CreateUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CreateUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/GetUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/GetUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ExtentTestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ExtentTestListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/UserLifecycleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/UserLifecycleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +53,18 @@
       <recent name="base" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CreateUserWorkflowTest">
-    <configuration name="CreateUserWorkflowTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.C:/Users/kandd/OneDrive/Documents/FullStack/w2a/Automation Architect/restassured-reqres-testng/testng.xml">
+    <configuration name="C:/Users/kandd/OneDrive/Documents/FullStack/w2a/Automation Architect/restassured-reqres-testng/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="restassured-reqres-testng" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeleteUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="restassured-reqres-testng" />
       <extension name="coverage">
         <pattern>
@@ -65,7 +73,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CreateUserWorkflowTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.DeleteUserTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -73,7 +81,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DeleteUserTest.deleteUser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="restassured-reqres-testng" />
       <extension name="coverage">
         <pattern>
@@ -82,7 +90,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.GetUserTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.DeleteUserTest" />
+      <option name="METHOD_NAME" value="deleteUser" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserLifecycleTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="restassured-reqres-testng" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.UserLifecycleTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -90,7 +116,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetUserTest.getUserById" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="UserLifecycleTest.fullUserLifecycle" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="restassured-reqres-testng" />
       <extension name="coverage">
         <pattern>
@@ -99,44 +125,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.GetUserTest" />
-      <option name="METHOD_NAME" value="getUserById" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ListUsersTest.getUsersByPageNumber" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="restassured-reqres-testng" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ListUsersTest" />
-      <option name="METHOD_NAME" value="getUsersByPageNumber" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserNotFoundTest.getNonExistingUser" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="restassured-reqres-testng" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.UserNotFoundTest" />
-      <option name="METHOD_NAME" value="getNonExistingUser" />
+      <option name="MAIN_CLASS_NAME" value="tests.UserLifecycleTest" />
+      <option name="METHOD_NAME" value="fullUserLifecycle" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -146,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CreateUserWorkflowTest" />
-        <item itemvalue="TestNG.ListUsersTest.getUsersByPageNumber" />
-        <item itemvalue="TestNG.GetUserTest" />
-        <item itemvalue="TestNG.UserNotFoundTest.getNonExistingUser" />
-        <item itemvalue="TestNG.GetUserTest.getUserById" />
+        <item itemvalue="TestNG.C:/Users/kandd/OneDrive/Documents/FullStack/w2a/Automation Architect/restassured-reqres-testng/testng.xml" />
+        <item itemvalue="TestNG.UserLifecycleTest.fullUserLifecycle" />
+        <item itemvalue="TestNG.UserLifecycleTest" />
+        <item itemvalue="TestNG.DeleteUserTest" />
+        <item itemvalue="TestNG.DeleteUserTest.deleteUser" />
       </list>
     </recent_temporary>
   </component>
