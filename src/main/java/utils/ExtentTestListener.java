@@ -10,7 +10,7 @@ import org.testng.ITestResult;
 public class ExtentTestListener implements ITestListener {
 
     private static ExtentReports extent = ExtentManager.getInstance();
-    private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
+    public static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
 
     @Override
     public void onTestStart(ITestResult result) {
